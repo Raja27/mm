@@ -20,6 +20,6 @@ from core import urls as core_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^bg/', include(bg_urls)),
-    url(r'^user/', include(core_urls)),
+    url(r'^', include(bg_urls)),
+    url(r'^', include(core_urls)),
 ]
